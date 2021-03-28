@@ -2,3 +2,4 @@
 ---
 
 {% include_relative common.css %}
+{% include_relative nav.css %}
