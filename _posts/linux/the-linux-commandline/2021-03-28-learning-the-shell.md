@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Linux Learning the Shell
+layout: notes
+title: Learning the Shell
 meta: (meta) brief description
 source: 
 category: linux
