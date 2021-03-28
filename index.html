@@ -8,3 +8,14 @@ titleAfter: Kyungjae's Engineering Blog
 
 <h1>About Kyungjae Lee</h1>
 #TBD - Brief Self Introduction
+
+<h2>Recently Added Posts</h2>
+
+<ul>
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="">{{post.title}}</a>
+            <p>{{post.meta}}</p>
+        </li>
+    {% endfor %}
+</ul>
