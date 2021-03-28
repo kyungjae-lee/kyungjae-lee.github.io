@@ -1,5 +1,5 @@
 ---
-layout: notebook-categories
+layout: notebook-contents
 title: Linux
 ---
 
@@ -9,7 +9,6 @@ title: Linux
     {% for post in site.categories.linux %}
         <li>
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-            <p>{{post.meta}}</p>
         </li>
     {% endfor %}
 </ul>

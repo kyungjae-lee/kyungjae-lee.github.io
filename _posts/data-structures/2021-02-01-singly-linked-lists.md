@@ -1,12 +1,12 @@
 ---
 layout: notes
-title: Singly-Linked Lists
-meta: Implementation of the Singly-Linked Lists
-source: 
+title: "[Data Structures] Singly-Linked Lists"
+meta: Header and Implementation of the Singly-Linked Lists
+reference: Mastering Algorithms with C, by Kyle Loudon 
 category: data-structures
 ---
 
-### Header for the Linked List Abstract Data Type 
+## Header for the Linked List Abstract Data Type 
 
 ```c
 #ifndef LIST_H
@@ -47,7 +47,7 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 #endif
 ```
 
-### Implementation of the Linked List Abstract Datatype
+## Implementation of the Linked List Abstract Datatype
 
 ```c
 #include <stdlib.h>

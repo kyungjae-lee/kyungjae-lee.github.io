@@ -1,4 +1,9 @@
 makrdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 url: https://kyungjae-lee.github.io
 baseurl: 
 exclude: ['README.md']
