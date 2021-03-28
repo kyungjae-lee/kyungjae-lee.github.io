@@ -1,0 +1,5 @@
+makrdown: kramdown
+url: https://kyungjae-lee.github.io
+baseurl: /
+exclude: ['README.md']
+permalink: pretty
