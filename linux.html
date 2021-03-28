@@ -1,14 +1,14 @@
 ---
-layout: notebook-contents
+layout: notebooks
 title: Linux
 ---
 
 <h1>Linux</h1>
 
-<ul>
-    {% for post in site.categories.linux %}
+<ol>
+    {% for post in site.categories.linux reversed %}
         <li>
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         </li>
     {% endfor %}
-</ul>
+</ol>

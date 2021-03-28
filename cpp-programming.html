@@ -1,14 +1,14 @@
 ---
-layout: notebook-contents
+layout: notebooks
 title: C++ Programming
 ---
 
 <h1>C++ Programming</h1>
 
-<ul>
-    {% for post in site.categories.cpp-pragramming %}
+<ol>
+    {% for post in site.categories.cpp-pragramming reversed %}
         <li>
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         </li>
     {% endfor %}
-</ul>
+</ol>

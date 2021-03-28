@@ -2,13 +2,18 @@
 layout: notes
 title: "[Data Structures] Doubly-Linked Lists"
 meta: Header and Implementation of the Doubly-Linked Lists
-reference: Mastering Algorithms with C, by Kyle Loudon 
+reference-title: Mastering Algorithms with C
+reference-author: Loudon, K
+reference-publication-year: 1999
+reference-publisher: O'Reilly Media, Inc.
 category: data-structures
 ---
 
 ## Header for the Doubly-Linked List Abstract Datatype
 
 ```c
+/* dlist.h */
+
 #ifndef DLIST_H
 #define DLIST_H
 
@@ -53,6 +58,8 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
 ## Implementation of the Doubly-Linked List Abstract Datatype
 
 ```c
+/* dlist.c */
+
 #include <stdlib.h>
 #include <string.h>
 
