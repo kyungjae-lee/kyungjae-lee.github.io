@@ -1,0 +1,15 @@
+---
+layout: notes
+title: Data Structures
+---
+
+<h1>Data Structures</h1>
+
+<ul>
+    {% for post in site.categories.data-structures %}
+        <li>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <p>{{post.meta}}</p>
+        </li>
+    {% endfor %}
+</ul>

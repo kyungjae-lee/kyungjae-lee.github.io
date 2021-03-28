@@ -1,0 +1,15 @@
+---
+layout: notes
+title: C++ Programming
+---
+
+<h1>C++ Programming</h1>
+
+<ul>
+    {% for post in site.categories.c++-pragramming %}
+        <li>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <p>{{post.meta}}</p>
+        </li>
+    {% endfor %}
+</ul>
