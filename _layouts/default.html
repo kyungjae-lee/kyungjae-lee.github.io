@@ -9,6 +9,8 @@
 
 <body>
 	<!-- <header class="masthead {{page.mastheadClass}}"> -->
+	<hr class="main-separator">
+	<hr class="main-separator">
 	<header>
 		<h1>Engineer's Notebook</h1>
 		{% include nav.html navclass='nav-top' %}
@@ -20,11 +22,12 @@
 		{{content}}
 	</main>
 
+	<hr class="main-separator">
 	<footer>
-		<hr class="main-separator">
+		{% include nav.html navclass='nav-bottom' %}
 		<p>Copyright © 2021 Kyungjae Lee. All rights reserved. </p>
-
 	</footer> 
+	<hr class="main-separator">
 </body>
 
 </html>
