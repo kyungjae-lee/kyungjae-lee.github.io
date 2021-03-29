@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: "[Data Structures] Doubly-Linked Lists"
-meta: Header and Implementation of the Doubly-Linked Lists
+meta: Implementation of the Doubly-Linked Lists
 reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media, Inc.
 category: data-structures
 ---
@@ -10,9 +10,10 @@ category: data-structures
 
 ```c
 /* 
- * File Name: dlist.h
- * Reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media,
- *            Inc.
+ * File Name    : dlist.h
+ * Description  : Header for the Doubly-Linked List Abstract Datatype
+ * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
+                  Media, Inc.
  */
 
 #ifndef DLIST_H
@@ -60,9 +61,10 @@ int dlist_remove(DList *list, DListElmt *element, void **data);
 
 ```c
 /* 
- * File Name: dlist.c
- * Reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media,
- *            Inc.
+ * File Name    : dlist.c
+ * Description  : Inplementation of the Doubly-Linked List Abstract Datatype
+ * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
+ *                Media, Inc.
  */
 
 #include <stdlib.h>
