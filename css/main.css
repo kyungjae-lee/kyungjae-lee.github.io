@@ -6,3 +6,4 @@
 {% include_relative masthead.css %}
 {% include_relative syntax.css %}
 {% include_relative hr.css %}
+{% include_relative table.css %}

@@ -11,10 +11,11 @@ hr.border-thick {
 /* Dashed border */
 hr.border-dashed {
 	border-top: 1px dashed;
+	color: gray
 }
 
 /* Dotted border */
-hr.border-dashed {
+hr.border-dotted {
 	border-top: 1px dotted;
 }
 
