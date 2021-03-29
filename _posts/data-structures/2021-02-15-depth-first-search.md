@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: "[Data Structures] Depth-First Search"
-meta: Implementation of Depth-First Search
+meta: Implementation of a Function for Depth-First Search
 reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media, Inc.
 category: data-structures
 ---

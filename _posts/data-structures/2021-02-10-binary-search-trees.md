@@ -38,8 +38,8 @@ typedef struct AvlNode_
 typedef BiTree BisTree;
 
 /* Public Interface */
-void bistree_init(BisTree *tree, int (*compare)(const void *key1, const void
-*key2), void (*destroy)(void *data));
+void bistree_init(BisTree *tree, int (*compare)(const void *key1, 
+    const void *key2), void (*destroy)(void *data));
 void bistree_destroy(BisTree *tree);
 int bistree_insert(BisTree *tree, const void *data);
 int bistree_remove(BisTree *tree, const void *data);
@@ -243,8 +243,8 @@ static void destroy_right(BisTree *tree, BiTreeNode *node)
 }
 
 /* insert */
-static int insert(BisTree *tree, BiTreeNode **node, const void *data, int
-*balanced)
+static int insert(BisTree *tree, BiTreeNode **node, const void *data, 
+    int *balanced)
 {
     AvlNode *avl_data;
     int     cmpval, retval;
@@ -464,8 +464,8 @@ static int lookup(BisTree *tree, BiTreeNode *node, void **data)
 
 /* bistree_init */
 /* Complexity: O(1) */
-void bistree_init(BisTree *tree, int (*compare)(const void *key1, const void
-*key2), void (*destroy)(void *data))
+void bistree_init(BisTree *tree, int (*compare)(const void *key1, 
+    const void *key2), void (*destroy)(void *data))
 {
     /* Initialize the tree. */
     bitree_init(tree, destroy);
