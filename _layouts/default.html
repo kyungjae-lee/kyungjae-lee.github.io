@@ -8,15 +8,20 @@
 </head>
 
 <body>
-	<header class="masthead {{page.mastheadClass}}">
+	<!-- <header class="masthead {{page.mastheadClass}}"> -->
+	<header>
 		<h1>Engineer's Notebook</h1>
 		{% include nav.html navclass='nav-top' %}
 	</header>
+	<hr class="main-separator">
+	<hr class="main-separator">
 
-	{{content}}
+	<main>
+		{{content}}
+	</main>
 
 	<footer>
-		<hr>
+		<hr class="main-separator">
 		<p>Copyright © 2021 Kyungjae Lee. All rights reserved. </p>
 
 	</footer> 

@@ -2,15 +2,12 @@
 layout: notes
 title: "[Linux] Learning The Shell"
 meta: Basic language of the command line
-reference-title: The Linux Command Line
-reference-author: Shotts, W
-reference-publication-year: 2019
-reference-publisher: William Pollock
+reference: Shotts, W. (2019). The Linux Command Line. William Pollock.
 category: linux
 ---
 
 Notes about the shell.
 
 ```shell
-$ sudo apt install vim
+sudo apt install vim
 ```

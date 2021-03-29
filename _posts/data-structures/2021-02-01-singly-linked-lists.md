@@ -2,17 +2,18 @@
 layout: notes
 title: "[Data Structures] Singly-Linked Lists"
 meta: Header and Implementation of the Singly-Linked Lists
-reference-title: Mastering Algorithms with C
-reference-author: Loudon, K
-reference-publication-year: 1999
-reference-publisher: O'Reilly Media, Inc.
+reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media, Inc.
 category: data-structures
 ---
 
 ## Header for the Linked List Abstract Data Type 
 
 ```c
-/* list.h */
+/* 
+ * File Name: list.h
+ * Reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media,
+ *            Inc.
+ */
 
 #ifndef LIST_H
 #define LIST_H
@@ -55,7 +56,11 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 ## Implementation of the Linked List Abstract Datatype
 
 ```c
-/* list.c */
+/* 
+ * File Name: list.c
+ * Reference: Loudon, K. (1999). Mastering Algorithms with C. O'Reilly Media,
+ *            Inc.
+ */
 
 #include <stdlib.h>
 #include <string.h>
