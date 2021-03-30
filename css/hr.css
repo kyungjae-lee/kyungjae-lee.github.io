@@ -1,29 +1,3 @@
-/* Double border */
-hr.border-double {
-	border: 3px double;
-}
-
-/* Thick border */
-hr.border-thick {
-	border: 1px solid;
-}
-
-/* Dashed border */
-hr.border-dashed {
-	border-top: 1px dashed;
-	color: gray
-}
-
-/* Dotted border */
-hr.border-dotted {
-	border-top: 1px dotted;
-}
-
-/* Red border */
-hr.border-red {
-	border: solid red;
-}
-
 /* Main separator for header and footer */
 hr.main-separator {
 	margin-top: 0.1em;
@@ -34,17 +8,3 @@ hr.main-separator {
 	background-color: gray;
 }
 
-/* Header boarder */
-hr.header {
-	margin-top: 0.1em;
-	margin-bottom: 0.1em;
-	height: 1px;
-	border-width: 0;
-	color: black ;
-	background-color: black;
-}
-
-/* Separator border */
-hr.separator {
-	width: 90%;
-}
