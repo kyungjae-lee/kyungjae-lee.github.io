@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : clist.h
  * Description  : Header for the Linked List Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef CLIST_H

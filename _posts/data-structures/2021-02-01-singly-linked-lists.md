@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : list.h
  * Description  : Header for the Linked List Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef LIST_H

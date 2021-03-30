@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : dfs.h
  * Description  : Header for Depth-First Search
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef DFS_H

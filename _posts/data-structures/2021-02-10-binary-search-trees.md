@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : bistree.h
  * Description  : Header for the Binary Search Tree Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef BISTREE_H

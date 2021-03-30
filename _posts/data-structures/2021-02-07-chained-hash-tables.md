@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : chtbl.h
  * Description  : Header for the Chained Hash Table Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef CHTBL_H

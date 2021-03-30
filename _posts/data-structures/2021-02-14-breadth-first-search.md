@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : bfs.h
  * Description  : Header for Breadth-First Search
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef BFS_H

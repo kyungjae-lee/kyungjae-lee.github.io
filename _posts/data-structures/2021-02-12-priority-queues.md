@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : pqueue.h
  * Description  : Header for the Priority Queue Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef PQUEUE_H

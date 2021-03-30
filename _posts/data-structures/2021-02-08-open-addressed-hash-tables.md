@@ -13,7 +13,7 @@ category: data-structures
  * File Name    : ohtbl.h
  * Description  : Header for the Open-Addressed Hash Table Abstract Datatype
  * Reference    : Loudon, K. (1999). Mastering Algorithms with C. O'Reilly
-                  Media, Inc.
+ *                Media, Inc.
  */
 
 #ifndef OHTBL_H
