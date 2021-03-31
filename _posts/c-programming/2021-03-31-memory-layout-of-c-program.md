@@ -8,4 +8,4 @@ category: c-programming
 
 ## Memory Layout of C Program
 
-![Memory Layout of C Program]({{base.url}}/img/c-programming/memory-layout-of-c-program.jpg){:.inline-img}
+![Memory Layout of C Program]({{site.baseurl}}/img/c-programming/memory-layout-of-c-program.jpg){:.inline-img}
