@@ -5,6 +5,6 @@ kramdown:
         block:
             line_numbers: true
 url: https://kyungjae-lee.github.io
-baseurl: 
+baseurl: ""
 exclude: ['README.md']
 permalink: pretty
