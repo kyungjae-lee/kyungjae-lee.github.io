@@ -36,3 +36,9 @@ footer {
 	text-align: center;
 	position: relative; 
 }
+
+.inline-img {
+    margin: 0 auto;
+    display: block;
+	width: 700px;
+}
