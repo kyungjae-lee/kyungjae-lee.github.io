@@ -241,3 +241,9 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
     return 0;
 }
 ```
+
+## Description of Doubly-Linked Lists
+
+### Doubly-Linked Lists
+
+![Doubly-Linked Lists]({{site.baseurl}}/img/data-structures/doubly-linked-lists.jpg){:.inline-img}
