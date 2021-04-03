@@ -1,0 +1,35 @@
+.inline-img-w400 {
+    margin: 50px auto;
+    display: block;
+	width: 400px;
+}
+
+.inline-img-w600 {
+    margin: 50px auto;
+    display: block;
+	width: 600px;
+}
+
+.inline-img-w700 {
+    margin: 50px auto;
+    display: block;
+	width: 700px;
+}
+
+.inline-img-w800 {
+    margin: 50px auto;
+    display: block;
+	width: 800px;
+}
+
+.inline-img-w900 {
+    margin: 50px auto;
+    display: block;
+	width: 900px;
+}
+
+.inline-img-w1000 {
+    margin: 50px auto;
+    display: block;
+	width: 1000px;
+}

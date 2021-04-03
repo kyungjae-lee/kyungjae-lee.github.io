@@ -246,4 +246,4 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
 
 ### Doubly-Linked Lists
 
-![Doubly-Linked Lists]({{site.baseurl}}/img/data-structures/doubly-linked-lists.jpg){:.inline-img}
+![Doubly-Linked Lists]({{site.baseurl}}/img/data-structures/doubly-linked-lists.jpg){:.inline-img-w800}

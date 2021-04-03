@@ -193,4 +193,4 @@ int list_rem_next(List *list, ListElmt *element, void **data)
 
 ### Singly-Linked Lists
 
-![Singly-Linked Lists]({{site.baseurl}}/img/data-structures/singly-linked-lists.jpg){:.inline-img}
+![Singly-Linked Lists]({{site.baseurl}}/img/data-structures/singly-linked-lists.jpg){:.inline-img-w700}
