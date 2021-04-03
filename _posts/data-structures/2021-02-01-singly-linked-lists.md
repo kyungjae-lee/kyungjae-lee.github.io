@@ -189,3 +189,9 @@ int list_rem_next(List *list, ListElmt *element, void **data)
     return 0;
 }
 ```
+## Description of Sinly-Linked Lists
+
+### Singly-Linked Lists
+
+![Memory Layout of C Program]({{site.baseurl}}/img/data-structures/singly-linked-lists.jpg){:.inline-img}
+
