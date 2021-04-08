@@ -171,3 +171,9 @@ int clist_rem_next(CList *list, CListElmt *element, void **data)
     return 0;
 }
 ```
+
+## Description of Circular Lists
+
+### Circular Lists
+
+![Circular Lists]({{site.baseurl}}/img/data-structures/circular-lists.jpg){:.inline-img-w800}
