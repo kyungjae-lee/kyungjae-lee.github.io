@@ -33,3 +33,9 @@
     display: block;
 	width: 1000px;
 }
+
+.inline-img-w1200 {
+    margin: 50px auto;
+    display: block;
+    width: 1200px;
+}
