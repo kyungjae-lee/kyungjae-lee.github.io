@@ -1,7 +1,7 @@
 ---
 layout: notes
-title: "[C Programming] gets()"
-meta: Important facts about the 'gets' function
+title: "[C Programming] gets(), fgets()"
+meta: Important facts about the 'gets' and 'fgets' function
 reference: 
 category: c-programming
 ---
