@@ -121,6 +121,6 @@ Description
 
 Use fgets() instead of gets() in most situations because it is safer!
 
-fgets() guarantees that the string being read fits into the array. (gets() may
-step outside the bounds of the receiving array.)
+fgets() guarantees that the string being read fits into the receiving array
+while gets() may step outside the bounds of the array.
 
