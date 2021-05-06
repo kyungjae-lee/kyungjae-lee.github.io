@@ -216,7 +216,8 @@ to precede.
 ![List Insertion Elsewhere 1]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_1.jpg){:.inline-img-w700}
 
 2) Set the 'next' pointer of the element that will precede the new element to
-point to the new element.
+point to the new element. (Remember to update the tail to point to the new
+tail when inserting an element at the tail of the list.)
 
 ![List Insertion Elsewhere 2]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_2.jpg){:.inline-img-w700}
 
@@ -231,7 +232,9 @@ Set the head of the list to point to the element after the one being removed.
 #### 2. Removing from somewhere other than the head
 
 Set the 'next' pointer of the element preceding the one being removed to
-point to the element after the element being removed.
+point to the element after the element being removed. (Remember to update the
+tail to point to the new tail when removing an element at the tail of the
+list, or to NULL if removing an element has caused the list to become empty.)
 
 ![List Removal Elsewhere]({{site.baseurl}}/img/data-structures/list_removal_elsewhere.jpg){:.inline-img-w700}
 
