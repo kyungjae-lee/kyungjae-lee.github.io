@@ -189,8 +189,49 @@ int list_rem_next(List *list, ListElmt *element, void **data)
     return 0;
 }
 ```
+
 ## Description of Singly-Linked Lists
 
 ### Singly-Linked Lists
 
 ![Singly-Linked Lists]({{site.baseurl}}/img/data-structures/singly-linked-lists.jpg){:.inline-img-w700}
+
+### list_ins_next()
+
+#### 1. Inserting at the head of the list
+
+1) Set the 'next' pointer of the new element to the current head of the list.
+
+![List Insertion Head 1]({{site.baseurl}}/img/data-structures/list_insertion_head_1.jpg){:.inline-img-w700}
+
+2) Reset the head of the list to point to the new element.
+
+![List Insertion Head 2]({{site.baseurl}}/img/data-structures/list_insertion_head_2.jpg){:.inline-img-w700}
+
+#### 2. Inserting somewhere other than at the head of the list
+
+1) Set the 'next' pointer of the new element to point to the element it is going
+to precede.
+
+![List Insertion Elsewhere 1]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_1.jpg){:.inline-img-w700}
+
+2) Set the 'next' pointer of the element that will precede the new element to
+point to the new element.
+
+![List Insertion Elsewhere 2]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_2.jpg){:.inline-img-w700}
+
+### list_rem_next()
+
+#### 1. Removing from the head of the list
+
+Set the head of the list to point to the element after the one being removed.
+
+![List Removal Head]({{site.baseurl}}/img/data-structures/list_removal_head.jpg){:.inline-img-w700}
+
+#### 2. Removing from somewhere other than the head
+
+Set the 'next' pointer of the element preceding the one being removed to
+point to the element after the element being removed.
+
+![List Removal Elsewhere]({{site.baseurl}}/img/data-structures/list_removal_elsewhere.jpg){:.inline-img-w700}
+
