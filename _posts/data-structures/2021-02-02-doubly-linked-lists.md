@@ -278,6 +278,11 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
 4)
 ![dlist_ins_prev_4]({{site.baseurl}}/img/data-structures/dlist_ins_prev_4.jpg){:.inline-img-w800}
 
+#### [!] Note
+
+Remember to update the tail to point to the new tail when inserting an element
+at the tail of the list.
+
 ### dlist_remove()
 
 #### 1. Removing from the head of the list
@@ -295,3 +300,13 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
 
 2)
 ![dlist_remove_elsewhere_2]({{site.baseurl}}/img/data-structures/dlist_remove_elsewhere_2.jpg){:.inline-img-w800}
+
+#### [!] Note
+
+Remember to update the tail to point to the new tail when removing an element
+at the tail of the list, or to NULL if removing an element has caused the list
+to become empty.
+
+Upon return, ‘data’ points to the data stored in the element that was removed.
+It is the responsibility of the caller to manage the storage associated with 
+the data.

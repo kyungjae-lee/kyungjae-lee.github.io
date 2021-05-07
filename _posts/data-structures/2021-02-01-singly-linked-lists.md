@@ -216,10 +216,13 @@ to precede.
 ![list_ins_next_elsewhere_1]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_1.jpg){:.inline-img-w700}
 
 2) Set the 'next' pointer of the element that will precede the new element to
-point to the new element. (Remember to update the tail to point to the new
-tail when inserting an element at the tail of the list.)
+point to the new element. 
 
 ![list_ins_next_elsewhere_2]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_2.jpg){:.inline-img-w700}
+
+#### [!] Note
+Remember to update the tail to point to the new tail when inserting an element
+at the tail of the list.
 
 ### list_rem_next()
 
@@ -232,9 +235,18 @@ Set the head of the list to point to the element after the one being removed.
 #### 2. Removing from somewhere other than the head
 
 Set the 'next' pointer of the element preceding the one being removed to
-point to the element after the element being removed. (Remember to update the
-tail to point to the new tail when removing an element at the tail of the
-list, or to NULL if removing an element has caused the list to become empty.)
+point to the element after the element being removed. 
+
 
 ![list_rem_next_elsewhere]({{site.baseurl}}/img/data-structures/list_removal_elsewhere.jpg){:.inline-img-w700}
 
+
+#### [!] Note 
+
+Remember to update the tail to point to the new tail when removing an element
+at the tail of the list, or to NULL if removing an element has caused the list
+to become empty.
+
+Upon return, 'data' points to the data stored in the element that was removed.
+It is the responsibility of the caller to manage the storage associated with
+the data.
