@@ -202,24 +202,24 @@ int list_rem_next(List *list, ListElmt *element, void **data)
 
 1) Set the 'next' pointer of the new element to the current head of the list.
 
-![List Insertion Head 1]({{site.baseurl}}/img/data-structures/list_insertion_head_1.jpg){:.inline-img-w700}
+![list_ins_next_head_1]({{site.baseurl}}/img/data-structures/list_insertion_head_1.jpg){:.inline-img-w700}
 
 2) Reset the head of the list to point to the new element.
 
-![List Insertion Head 2]({{site.baseurl}}/img/data-structures/list_insertion_head_2.jpg){:.inline-img-w700}
+![list_ins_next_head_2]({{site.baseurl}}/img/data-structures/list_insertion_head_2.jpg){:.inline-img-w700}
 
 #### 2. Inserting somewhere other than at the head of the list
 
 1) Set the 'next' pointer of the new element to point to the element it is going
 to precede.
 
-![List Insertion Elsewhere 1]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_1.jpg){:.inline-img-w700}
+![list_ins_next_elsewhere_1]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_1.jpg){:.inline-img-w700}
 
 2) Set the 'next' pointer of the element that will precede the new element to
 point to the new element. (Remember to update the tail to point to the new
 tail when inserting an element at the tail of the list.)
 
-![List Insertion Elsewhere 2]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_2.jpg){:.inline-img-w700}
+![list_ins_next_elsewhere_2]({{site.baseurl}}/img/data-structures/list_insertion_elsewhere_2.jpg){:.inline-img-w700}
 
 ### list_rem_next()
 
@@ -227,7 +227,7 @@ tail when inserting an element at the tail of the list.)
 
 Set the head of the list to point to the element after the one being removed.
 
-![List Removal Head]({{site.baseurl}}/img/data-structures/list_removal_head.jpg){:.inline-img-w700}
+![list_rem_next_head]({{site.baseurl}}/img/data-structures/list_removal_head.jpg){:.inline-img-w700}
 
 #### 2. Removing from somewhere other than the head
 
@@ -236,5 +236,5 @@ point to the element after the element being removed. (Remember to update the
 tail to point to the new tail when removing an element at the tail of the
 list, or to NULL if removing an element has caused the list to become empty.)
 
-![List Removal Elsewhere]({{site.baseurl}}/img/data-structures/list_removal_elsewhere.jpg){:.inline-img-w700}
+![list_rem_next_elsewhere]({{site.baseurl}}/img/data-structures/list_removal_elsewhere.jpg){:.inline-img-w700}
 
