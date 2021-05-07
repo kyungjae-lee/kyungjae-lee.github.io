@@ -247,3 +247,51 @@ int dlist_remove(DList *list, DListElmt *element, void **data)
 ### Doubly-Linked Lists
 
 ![Doubly-Linked Lists]({{site.baseurl}}/img/data-structures/doubly-linked-lists.jpg){:.inline-img-w800}
+
+### dlist_ins_next()
+
+#### Inserting an element into a doubly-linked list with dlist_ins_next()
+
+1)
+![dlist_ins_next_1]({{site.baseurl}}/img/data-structures/dlist_ins_next_1.jpg){:.inline-img-w800}
+
+2)
+![dlist_ins_next_2]({{site.baseurl}}/img/data-structures/dlist_ins_next_2.jpg){:.inline-img-w800}
+
+3)
+![dlist_ins_next_3]({{site.baseurl}}/img/data-structures/dlist_ins_next_3.jpg){:.inline-img-w800}
+
+4)
+![dlist_ins_next_4]({{site.baseurl}}/img/data-structures/dlist_ins_next_4.jpg){:.inline-img-w800}
+
+#### Inserting an element into a doubly-linked list with dlist_ins_prev()
+
+1)
+![dlist_ins_prev_1]({{site.baseurl}}/img/data-structures/dlist_ins_prev_1.jpg){:.inline-img-w800}
+
+2)
+![dlist_ins_prev_2]({{site.baseurl}}/img/data-structures/dlist_ins_prev_2.jpg){:.inline-img-w800}
+
+3)
+![dlist_ins_prev_3]({{site.baseurl}}/img/data-structures/dlist_ins_prev_3.jpg){:.inline-img-w800}
+
+4)
+![dlist_ins_prev_4]({{site.baseurl}}/img/data-structures/dlist_ins_prev_4.jpg){:.inline-img-w800}
+
+### dlist_remove()
+
+#### 1. Removing from the head of the list
+
+1)
+![dlist_remove_head_1]({{site.baseurl}}/img/data-structures/dlist_remove_head_1.jpg){:.inline-img-w800}
+    
+2)
+![dlist_remove_head_2]({{site.baseurl}}/img/data-structures/dlist_remove_head_2.jpg){:.inline-img-w800}
+
+#### 2. Removing from somewhere other than the head  
+
+1)
+![dlist_remove_elsewhere_1]({{site.baseurl}}/img/data-structures/dlist_remove_elsewhere_1.jpg){:.inline-img-w800}
+
+2)
+![dlist_remove_elsewhere_2]({{site.baseurl}}/img/data-structures/dlist_remove_elsewhere_2.jpg){:.inline-img-w800}
