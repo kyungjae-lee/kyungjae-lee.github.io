@@ -200,3 +200,9 @@ int chtbl_lookup(const CHTbl *htbl, void **data)
     return -1;
 }
 ```
+
+## Description of Chained Hash Tables
+
+### Chained Hash Tables (Concept)
+
+![chained-hash-tables-concept]({{site.baseurl}}/img/data-structures/chained-hash-tables-concept.jpg){:.inline-img-w800}
