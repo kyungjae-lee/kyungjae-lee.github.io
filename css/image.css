@@ -4,6 +4,12 @@
 	width: 400px;
 }
 
+.inline-img-w500 {
+    margin: 50px auto;
+    display: block;
+	width: 500px;
+}
+
 .inline-img-w600 {
     margin: 50px auto;
     display: block;
