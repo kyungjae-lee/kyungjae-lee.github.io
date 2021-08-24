@@ -25,9 +25,11 @@ Followings are NOT statements. Use this rule!
     * You are a Freshmen. (If who 'you' is known, it is a statement.)
 * Leave the room. (Command)
 
+
 ## Statement Letters
 
 Uppercase letters such as A, B and C that are used to represent the statements.
+
 
 ## Logical Connectives
 
@@ -52,4 +54,42 @@ must have at least two statements.
 ### English Words and Logical Connectives
 
 ![english-words-and-logical-connectives]({{site.baseurl}}/img/discrete-structures/english-words-and-logical-connectives.jpg){:.inline-img-w700}
+
+### Negation of a statement
+
+![negation-of-a-statement]({{site.baseurl}}/img/discrete-structures/negation-of-a-statement.jpg){:.inline-img-w700}
+
+
+## Well-Formed-Formula (WFF)
+
+An expression that is legitimate.
+* e.g., (A→B)∧(B→A) is a wff.
+* e.g., A))∧∧→BC is not a wff.
+
+In a wff with a number of connectives, the connective to be applied last is the
+'main connective'.
+* e.g., ((A∨B)∧C)→(B∨C')
+    - main connective is '→'
+
+
+## Order of Precedence of Connectives
+
+1. connectives within parentheses, innermost parentheses first
+2. '
+3. ∧, ∨
+4. →
+5. ↔
+
+
+## Truth Table of Compound Statements
+
+The total number of rows in a truth table for *n* statement letters is 2^*n*.
+
+### Example
+
+![truth-table-of-compound-statements]({{site.baseurl}}/img/discrete-structures/truth-table-of-compound-statements.jpg){:.inline-img-w900}
+
+
+
+
 
