@@ -90,6 +90,21 @@ The total number of rows in a truth table for *n* statement letters is 2^*n*.
 ![truth-table-of-compound-statements]({{site.baseurl}}/img/discrete-structures/truth-table-of-compound-statements.jpg){:.inline-img-w900}
 
 
+## Tautologies
 
+If the truth values of the main connective are,
+* all T's - Tautology (don't need if statements in the end)
+* all F's - Contradiction, Ausurdity (don't need if statements in the end)
+* T's, F's - Contingency (evaluates to true or false depending on the
+  individual component statements and still need if statements) 
 
+### Some Tautological Equivalences
+
+*Logical Equivalent* or *Equal* means 'have the same True Table'.
+
+Each equivalence in a pair is called the *dual* of the other.
+* In each pair, one equivalence can be obtained from the other by replacing 
+∨ to ∧, ∧ to ∨, 1 to 0, 0 to 1.
+
+![tautological-equivalence]({{site.baseurl}}/img/discrete-structures/tautological-equivalence.jpg){:.inline-img-w900}
 
