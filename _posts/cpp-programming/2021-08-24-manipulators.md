@@ -126,3 +126,54 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
+
+```c
+//
+// More examples.
+//
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    // Dashes represent spaces on the screen.
+
+    cout << fixed << setw(6) << setprecision(1);
+    cout << 38.24591 << endl;
+    // --38.2
+
+    cout << fixed << setw(10) << setprecision(3);
+    cout << 125.374 << endl;
+    // ---125.374
+
+    cout << fixed << setw(8) << setprecision(1);
+    cout << 125.374 << endl;
+    // ---125.4
+
+    cout << fixed << setw(5) << setprecision(0);
+    cout << 125.374 << endl;
+    // --125
+
+    cout << fixed << setprecision(2);
+    cout << setw(5) << 909 << setw(9) << 347.25 << endl;
+    // --909---347.25
+
+    cout << fixed;
+    cout << setw(5) << 909 << 213 << endl;
+    // --909213
+
+    cout << fixed << setprecision(2);
+    cout << setw(6) << 78.913421 << setw(6) << 909 << endl;;
+    // -78.91---909
+
+    cout << scientific << setprecision(2) << setw(10) << 74832.511 << endl;
+    // --7.48E+04
+
+    return 0;
+}
+```
