@@ -49,6 +49,8 @@ number).
   output automatically expands to the required width; the output is NOT
   truncated.
 
+Applies to the next output expression ONLY!
+
 The output is right-justified.
 
 Header file *iomanip* must be included. 
@@ -68,13 +70,15 @@ May be used in two forms:
     - The keyword *scientific* before the *setprecision()* prints the
       floating-point number in scientific notation.
 
+Valid until a similar subsequent statement changes the precision.
+
 Header file *iomanip* must be included. 
 
 ## Examples
 
 RULES!!!
 1. Default precision is 6.
-2. setw() applies to the next expression ONLY!
+2. setw() applies to the next output expression ONLY!
 3. If field width is set to small, the number/string is still printed. set() is
    ignored.
 
