@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: "[C++ Programming] Formatting Output with Manipulators"
-meta: Formatting output with manipulators in C++
+meta: endl, fixed, scientific, left, right, setfw(), setfill(), setprecision()
 reference: 
 category: cpp-programming
 ---
@@ -14,13 +14,16 @@ Some commonly used manipulators in C++ are,
 * endl
 * fixed
 * scientific
+* left, right
 * setw()
+* setfill()
 * setprecision()
 
 endl, fixed, scientific are called 'manipulator operators' and set(),
 setprecision() are called 'manipulator functions'.
 
-## endl
+
+### endl
 
 *endl* feeds the whole line and then point the cursor to the beginning of the
 next line.
@@ -29,19 +32,36 @@ next line.
 
 Header file *iostream* must be included.
 
-## fixed
+
+### fixed
 
 *fixed* is used to output floating-point numbers in a fixed decimal format.
 
 Header file *iostream* must be included.
 
-## scientific
+
+### scientific
 
 *scientific* is used to output floating-point numbers in scientific format.
 
 Header file *iostream* must be included.
 
-## setw()
+
+### left, right
+
+* left
+    - the output is padded to the *field width* appending *fill characters* at
+      the end.
+* right
+    - the output is padded to the *fleid width* by inserting *fill characters*
+      at the beginning.
+
+Once set, remains set until changed to something else.
+
+Header file *iostream* must be included.
+
+
+### setw()
 
 *setw()* is used to set the minimum field width on the output (string or a 
 number).
@@ -55,7 +75,8 @@ The output is right-justified.
 
 Header file *iomanip* must be included. 
 
-## setprecision()
+
+### setprecision()
 
 *setprecision()* is used with floating point numbers.
 
@@ -70,19 +91,25 @@ May be used in two forms:
     - The keyword *scientific* before the *setprecision()* prints the
       floating-point number in scientific notation.
 
-Valid until a similar subsequent statement changes the precision.
+Once set, remains set until a similar subsequent statement changes the 
+precision.
 
 Header file *iomanip* must be included. 
 
-## Examples
 
-RULES!!!
+## RULES!!!
+
 1. Default precision is 6.
-2. setw() applies to the next output expression ONLY!
+2. setw() is the only manipulator active on the next output expression ONLY!
 3. If field width is set to small, the number/string is still printed. set() is
    ignored.
 
-```c
+
+## Examples
+
+### Example 1
+
+```cpp
 //
 // Program to show the usage of manipulators in C++
 //
@@ -130,10 +157,11 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
+### Example 2
 
-```c
+```cpp
 //
-// More examples.
+// Program to show the usage of manipulators in C++
 //
 
 #include <iostream>
@@ -180,4 +208,87 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+```
+### Example 3
+
+```cpp
+//
+// Program to input and output mixed data types.
+// Types: string, char, integer, float, double
+//
+// Output format operations: left, setprecision(), setfill(), setw() and fixed.
+//
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    string firstname;
+    string lastname;
+    char initial;
+    unsigned int employee_no;
+    float wage, hours;
+    double pay;
+
+    cout << "Employee Record Database\n\n"; 
+    //'\n' can be used instead of 'endl'
+
+    cout << "enter the following information for each employee:\n\n";
+    cout << "LastName FirstName MiddleInitial IDNumber Wage HoursWorked";
+    cout << endl << endl;
+
+    cin >> lastname >> firstname >> initial >> employee_no >> wage >> hours;
+
+    cout << endl;
+    cout << fixed << setprecision(2);
+    cout << left; // Left justify in the field
+    // Once 'left' has been used, everything is left-justified until reset to
+    // 'right'
+    cout << setfill('.'); // Set fill to dots
+    // Once set, remains set until changed to something else. So be sure to
+    // set it back to blank when done.
+
+    cout << setw(20) << "Last Name:" << lastname << endl;
+    cout << setw(20) << "Fist Name:" << firstname << endl;
+    cout << setw(20) << "Initial:" << initial << endl;
+    cout << setw(20) << "Employee Number:" << employee_no << endl;
+    cout << setw(20) << "Wage:" << wage << endl;
+    cout << setw(20) << "Hours Worked:" << hours << endl;
+    // setw() has to be written every time because it is the only manipulator
+    // that is active on the very next output expression ONLY!!!
+
+    pay = wage * hours;
+
+    cout << "Pay:" << '$' << pay << endl;
+
+    cout << setfill(' '); // Restore fill char to space
+
+    cout << setw(20) << endl << endl;
+    system("pause"); // Windows only
+
+
+    return 0;
+}
+```
+```text
+Employee Record Database
+
+enter the following information for each employee:
+
+LastName FirstName MiddleInitial IDNumber Wage HoursWorked
+
+Lee Kyungjae M 2470 25.50 40
+
+Last Name:..........Lee
+Fist Name:..........Kyungjae
+Initial:............M
+Employee Number:....2470
+Wage:...............25.50
+Hours Worked:.......40.00
+Pay:$1020.00
 ```
