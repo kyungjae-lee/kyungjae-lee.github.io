@@ -1,7 +1,7 @@
 ---
 layout: notes
-title: "[C++ Programming] Manipulators in C++"
-meta: Important facts about the manipulators in C++
+title: "[C++ Programming] Formatting Output with Manipulators"
+meta: Formatting output with manipulators in C++
 reference: 
 category: cpp-programming
 ---
