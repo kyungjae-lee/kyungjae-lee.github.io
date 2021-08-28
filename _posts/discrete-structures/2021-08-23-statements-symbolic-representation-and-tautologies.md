@@ -108,3 +108,14 @@ Each equivalence in a pair is called the *dual* of the other.
 
 ![tautological-equivalence]({{site.baseurl}}/img/discrete-structures/tautological-equivalence.jpg){:.inline-img-w900}
 
+
+## De Morgan's Laws
+
+(A∨B)'↔A'∧B' and (A∧B)'↔A'∨B'
+
+* AND(OR) to OR(AND), combined complement to separate
+* Each is the dual of the other.
+* Useful in expressing the negation of a compound statement
+
+
+
