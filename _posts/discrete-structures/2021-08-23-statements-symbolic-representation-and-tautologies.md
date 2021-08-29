@@ -89,7 +89,7 @@ examined left to right.
 
 The total number of rows in a truth table for *n* statement letters is 2^*n*.
 
-### Example
+### Examples
 
 ![truth-table-of-compound-statements]({{site.baseurl}}/img/discrete-structures/truth-table-of-compound-statements.jpg){:.inline-img-w900}
 
@@ -120,6 +120,3 @@ Each equivalence in a pair is called the *dual* of the other.
 * AND(OR) to OR(AND), combined complement to separate
 * Each is the dual of the other.
 * Useful in expressing the negation of a compound statement
-
-
-
