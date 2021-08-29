@@ -80,6 +80,10 @@ In a wff with a number of connectives, the connective to be applied last is the
 4. →
 5. ↔
 
+If there are several logical connectives of the same precedence, they will be
+examined left to right.
+
+* e.g., A∨B∧B is equivalent to (A∨B)∧B
 
 ## Truth Table of Compound Statements
 

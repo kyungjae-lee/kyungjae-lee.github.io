@@ -14,6 +14,9 @@ propositional calculus*.
 
 [!] Note: *wff* stands for *well-formed-formula*
 
+[!] Note: A, B, C stand for single statement letters; P, Q, R, S stand for
+*wff*s.
+
 
 ## Valid Arguments
 
