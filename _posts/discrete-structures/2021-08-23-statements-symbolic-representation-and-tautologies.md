@@ -28,7 +28,8 @@ Followings are NOT statements. Use this rule!
 
 ## Statement Letters
 
-Uppercase letters such as A, B and C that are used to represent the statements.
+Uppercase/lower case letters such as A, B, C, p, q, r that are used to 
+represent the statements.
 
 
 ## Logical Connectives
