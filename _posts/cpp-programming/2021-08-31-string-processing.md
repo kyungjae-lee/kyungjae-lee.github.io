@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: "[C++ Programming] String Processing" 
-meta: length(), size(), find(), sutstr(), at(), erase(), insert(), replace(), append()
+meta: length(), size(), find(), sutstr(), at(), erase(), insert(), replace(), append(), reversit()
 reference: 
 category: cpp-programming
 ---
