@@ -58,4 +58,44 @@ following:
   in the expression
 
 
-∃∀
+## Scope and Free Variable
+
+"Grouping symbols" such as parentheses and brackets identify the **scope** of a
+quantifier, the section of the *wff* to which the quantifier applies.
+* e.g., (∀x)[(∃y)[P(x, y) ∧ Q(x, y)] → R(z)]
+    - Scope of x - (∃y)[P(x, y) ∧ Q(x, y)] → R(z)
+    - Scope of y - P(x, y) ∧ Q(x, y)
+
+**Free variable** is a variable occurs somewhere in a *wff* where it is NOT
+part of a quantifier and is NOT within the scope of a quantifier involving
+that variable. 
+* e.g., (∀x)[(∃y)[P(x, y) ∧ Q(x, y)] → R(z)]
+    - Free variable - z (not part of the given quantifiers)
+* e.g., (∀x)[P(x) ∧ Q(x)] → R(x)
+    - Free variable - x of R(x) (not within the scope of the given quantifier)
+    - [!] Note: Don't be fooled by the variable's appearance!
+
+ 
+## Translation
+
+P(x) = x is a parrot, U(x) = x is ugly
+
+* (∀x)[P(x) → U(x)]
+    - For everything in the world, if it is a parrot, it is ugly.
+    - For everything which is a parrot, it is ugly.
+    - Every parrot is ugly.
+* (∃x)[P(x) ∧ U(x)]
+    - There is at least one thing that is both a parrot and ugly.
+    - There is an ugly parrot.
+
+Think each of (∀ →), and (∃ ∧) is a good combination.
+
+[!] Note: the *wff* (∀x)[P(x) ∧ U(x)] is an incorrect translation because it
+says that everything in the domain - understood here to be the whole world - is
+an ugly parrot. This says something much stronger than the original English
+statement.
+
+[!] Note: the *wff* (∃x)[P(x) → U(x)] is an incorrect translation because it is
+true as long as there is anything, call it x, in the domain (the whole world)
+that is not a parrot, because then P(x) is false and the implication is true.
+(Indeed, this *wff* is true if there are no parrots in the world at all!)
