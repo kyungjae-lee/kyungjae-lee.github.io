@@ -7,6 +7,7 @@ category: cpp-programming
 ---
 
 [!] Note: string data means ASCII encoded data
+
 [!] Note: Be careful about the type mismatch!
 
 ## Examples
