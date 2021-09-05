@@ -45,6 +45,14 @@ int main(int argc, char *argv[])
 
     cin >> year >> dot >> month >> dot >> day >> product_id >> factory_loc 
         >> quality_flag >> inspector >> package_type;
+        // cin continues to read in the data as long as the type of the data 
+        // in the input buffer matches what it's expecting.
+        // cin also stops reading in the data when it encounters white space.
+        // skips over the white spaces to look for the next legitimate input.
+        // (following input would still make the program work.)
+        // 2021   . 08  . 26 . B
+        // 9 G
+        // DL
 
     cout << "Product code contains:" << endl;
     cout << left;
@@ -110,6 +118,7 @@ int main(int argc, char *argv[])
     cout << "Please enter a complete sentence." << endl;
     getline(cin, sentence); 
     // Read everything up until it encounters the 'end of line' character (\n)
+    // 2nd argument must be of type 'string'. Be careful!
 
     cout << "You entered: " << sentence << endl;
 
