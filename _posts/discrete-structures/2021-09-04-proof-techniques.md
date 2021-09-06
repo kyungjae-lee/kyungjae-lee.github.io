@@ -7,17 +7,32 @@ reference:
 category: discrete-structures
 ---
 
-
 ## Proof Techniques
 
-### Counterexample
+**Proof**
+* An impeccable argument.
+* Use only methods of pure logic.
+* Infers the validity of a given mathematical assertion.
 
-### Exhaustive Proof
+**Axiom**
+* A Proposition regarded as self-evidently true without proof.
 
-### Direct Proof
+### 1. Counterexample
 
-### Contraposition
+* Counterexample of a conjecture P(x) → Q(x) is a case in which P is true but Q
+is false. 
+* One counterexample is enough to disprove a conjecture.
+    - Find one example that the proposition does not hold true, then it is
+      generally not true.
+* If a counterexample is not forthcoming, perhaps the conjecture is true and we
+should try to prove it!
 
-### Contradiction
+### 2. Exhaustive Proof
 
-### Serendipity
+### 3. Direct Proof
+
+### 4. Contraposition
+
+### 5. Contradiction
+
+### 6. Serendipity
