@@ -28,10 +28,12 @@ which the statement *P(n)* is ture.
 * STEP 2. Assume *k ∈ S* for an arbitrary *k ≥ 1*. So,
     - *1 + 2 + 3 + ... + k = k(k + 1)/2* 
         - Induction Hypothesis (IHOP) 
+        - Put *k* in the original statement *P(n)*.
 * STEP 3. Show *k + 1 ∈ S*. 
     - [!] Note: It must be shown that,
         - *1 + 2 + 3 + ... + k + (k + 1) = (k + 1)(k + 2)/2* 
     - Add *k + 1* to both sides of IHOP.
+        - [!] Note: Add whatever the next sequence is.
         - *1 + 2 + 3 + ... + k + (k + 1) = k(k + 1)/2 + (k + 1)* 
         - (left side) = *k(k + 1)/2 + 2(k + 1)/2*
         - (left side) = *(k + 1)(k + 2)/2*
@@ -57,12 +59,14 @@ which the statement *P(n)* is ture.
     - [!] Note: May not be *1* all the time. Start with the first element of
       the set *S*.
 * STEP 2. Assume *k ∈ S* for an arbitrary *k ≥ 1* (or *k ∈ N*). So,
-    - *4 + 10 + 16 + ... + (6n - 2) = n(3n + 1)*
+    - *4 + 10 + 16 + ... + (6k - 2) = k(3k + 1)*
         - Induction Hypothesis (IHOP) 
+        - Put *k* in the original statement *P(n)*.
 * STEP 3. Show *k + 1 ∈ S*. 
     - [!] Note: It must be shown that,
         - *4 + 10 + 16 + ... + (6k - 2) + (6(k + 1) - 2) = (k + 1)(3(k + 1) + 1)*
-    - Add *k + 1* to both sides of IHOP.
+    - Add *6(k + 1) - 2* to both sides of IHOP.
+        - [!] Note: Add whatever the next sequence is.
         - *4 + 10 + 16 + ... + (6k - 2) + (6(k + 1) - 2) = k(3k + 1) + (6(k + 1) - 2)* 
         - (left side) = *3k^2 + k + 6k + 6 - 2*
         - (left side) = *3k^2 + 7k + 4*
