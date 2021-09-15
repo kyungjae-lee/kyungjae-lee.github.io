@@ -60,10 +60,67 @@ well!)
 ### 3. Direct Proof (Modus Ponens)
 
 * Direct proof assumes the hypothesis and deduces the conclusion.
+* [!] Note: If and only if (*iff*) proofs
+    - Theorems may have form *P* if and only if *Q*.
+        - "if and only if" AKA "*iff*"
+    - Parts of "if and only if"
+        - *P* if *Q* means *Q → P*
+        - *P* only if *Q* means *P → Q*
+    - To prove *P iff Q*, prove **both** P → Q and Q → P.
+        - Not a separate proof technique
+        - If and only if requires two proofs
+        - Parts of proof may use same or different techniques
 * e.g., If *x^3 - x^2 + x - 1 = 0*, then *x = 1* where *x ∈ R*.
     - *(x - 1)(x^2 + 1) = 0*
     - *x = 1* or *x^2 + 1 = 0*
     - *x^2 + 1 = 0* can't happen, so *x = 1* 
+* e.g., *x*\|*y* (*x* divides *y*, *y* is divisible by *x*) if and only if there
+  is an integer *n* (*n ∈ Z*) such that *y = xn*.
+    - Theorem. If *n*\|*m* and *m*\|*p* then *n*\|*p*.
+    - Proof.
+        - Let *n*\|*m*, then there is an integer *a* such that *m = an*.
+        - Let *m*\|*p*, then there is an integer *b* such that *p = bm*.
+        - Substitute for *m* in *p = bm*, to give *p = bm = b(an) = (ab)n.*
+        - Therefore *n*\|*p*. 
+* e.g., Given any consecutive integers, one of them is odd, one of them is
+  even.
+    - Restatement. If *m* and *n* are consecutive integers, then either *m* is
+      even *n* is odd, or vice versa.
+        - [!] Note: As we cannot assume *m* to be odd (or even), we need to
+          prove both cases.
+    - Proof.
+        - Case 1. Assume *m* is even, the smaller of *m* and *n*. Then ∃k, 
+          *k ∈ Z* where *m = 2k*. So, *m + 1 = n = 2k + 1* which is odd.
+        - Case 2. Assume *m* is odd, the smaller of *m* and *n*. Then ∃k, 
+          *k ∈ Z* where *m = 2k + 1*. So, *m + 1 = n = (2k + 1) + 1 = 2(k + 1)*
+          which is even.
+* e.g., Given integers *x* and *y*, product *xy* is odd if and only if *x* and
+  *y* are odd integers.
+    - Proof.
+        - Case 1. If *x* and *y* are odd integers, then *xy* is odd.
+        - Suppose *x* and *y* are odd.
+        - Then, *x = 2n + 1* and *y = 2m + 1*, where *m* and *n* are integers.
+            - [!] Note: In general, *x* and *y* can be the same or different.
+              We do not know! Make sure to use different character(e.g., m, n)
+              to express *x* and *y*.
+        - Then, *xy = (2n +1)(2m + 1) = 4mn + 2m + 2n + 1 = 2(2mn + m + n) + 1*.
+        - This has the form *2k + 1*, where *k = (2nm + 2m  + n)* is an
+          integer, so *xy* is odd.
+        - Case 2. If *xy* is odd then *x* and *y* are odd integers. 
+            - [!] Note: It is very though to do direct proof so let's use
+              contrapositive.
+        - Contrapositive. If **NOT**(*x* and *y* are odd), then **NOT**(*xy* is
+          odd).
+        - If *x* or *y* are not odd, then *xy* is not odd.
+        - If *x* is even or *y* is even, then *xy* even.
+        - The antecedent has three cases:
+            1. *x* even, *y* odd: *x = 2m, y = 2n + 1. Then, *xy* = (2m)(2n +
+               1) = 2(2mn + m), which is even.
+            2. *x* odd, *y* even: *x = 2m + 1, y = 2n. Then, *xy* = 
+               (2m + 1)(2n) = 2(2mn + m), which is even.
+            3. *x* even, *y* even: *x = 2m, y = 2n. Then, *xy* = (2m)(2n)
+               = 2(2mn), which is even.
+        - Thus, (*xy* odd) → (*x* and *y* are odd) by contraposition.
 
 ### 4. Contraposition (Indirect Proof)
 
@@ -79,6 +136,16 @@ Q' → P'.
     - If *x ≠ 1*, then *x - 1 ≠ 0*, then *(x^2 + 1)(x - 1) ≠ 0*.
     - So, now, by contrapositive, if *x^3 - x^2 + x - 1 = 0*, then *x = 1*.
         - This final statement is very important! Do not miss it!
+* e.g., If the sequence of an integer is odd, then the integer is odd.
+    - Restatement. If *n^2* is odd, then *n* is odd, where *n ∈ Z*.
+    - Contrapositive. If *n* is **NOT** odd, then *n^2* is **NOT** odd, where
+      *n ∈ Z*.
+    - If *n* is even, then *n^2* is even. ∃k, *k ∈ Z* where *n = 2k*.
+    - So, *n^2 = (2k)^2 = 4k^2 = 2(2k^2)*.
+    - Therefore *n^2* is even.
+        - [!] Note: This is NOT the end!
+    - Thus, if *n^2* is odd, then *n* is odd, where *n ∈ Z*.
+        - [!] Note: Finish with the original statement.
 * [!] Note: Errors in proof by *contraposition*
     - P' → Q' (negate but not reverse) A.K.A **inverse**
         - P → Q and P' → Q' are not equivalent.
@@ -86,7 +153,8 @@ Q' → P'.
     - Q → P (reverse but not negate) A.K.A **converse**
         - P → Q and Q → P are not equivalent.
         - Proving Q → P does not prove P → Q.
-        - e.g., Original: If *a > 5*, then *a > 2*. (True) / Converse: If *a > 2*, then *a > 5*. (False)
+        - e.g., Original: If *a > 5*, then *a > 2*. (True) / 
+          Converse: If *a > 2*, then *a > 5*. (False)
 
 
 ### 5. Contradiction (Indirect Proof)
