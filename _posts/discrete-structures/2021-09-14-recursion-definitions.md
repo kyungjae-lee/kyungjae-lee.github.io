@@ -77,7 +77,7 @@ definition of string)
 * e.g., **Bakus-Naur form (BNF)**. The syntax for programming languages are 
   defined by *BNF*.
     - Items in < > are defined in terms of other items and may be recursive.
-    - Items no in brackets are not further defined. (**Terminals**)
+    - Items not in brackets are not further defined. (**Terminals**)
     - Vertical bard (\|) denotes choice. Like an *or*. 
     - \<identifier> ::= \<letter> \| \<identifier>\<letter> \| 
       \<identifier\>\<digit\>
