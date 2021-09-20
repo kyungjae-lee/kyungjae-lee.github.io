@@ -141,10 +141,21 @@ A **WWF** is defined recursively by:
 given formula only by applying one of those 5 mentioned above, then it is
 *wff*.
 * e.g., Prove that ((A ∨ B') → C) is a *wff*.
-    - *A, B, C* are letters, so by definition these are *wff*s.
-    - *B* allows *B'* to be*wff*
-    - *(A ∨ B')* is *wff*
-    - *(A ∨ B')* → C is *wff*
+    - *A, B, C* are *wff*s by rule 1.
+    - By rule 2, *B'* is a *wff*.
+    - And so then is *(A ∨ B')* is *(A ∨ B') → C*.
 
 
 ## Recursively Defined Operations    
+
+Certain operations performed on objects can be defined recursively.
+
+* e.g., A recursive definition of the exponentiataion operation *a^n* on a
+  nonzero real number *a*, where *n* is a nonnegative integers, is
+  1. *a^0 = 1*
+  2. *a^n = (a^(n-1))a* for *n ≥ 1*
+
+* e.g., A recursive definition for multiplication of two positive integers *m*
+  and *n* is
+  1. *m(1) = m*
+  2. *m(n) = m(n - 1) + m* for *n ≥ 2*
