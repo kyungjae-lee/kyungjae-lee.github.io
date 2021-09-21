@@ -136,7 +136,7 @@ Q' → P'.
     - If *x ≠ 1*, then *x - 1 ≠ 0*, then *(x^2 + 1)(x - 1) ≠ 0*.
     - So, now, by contrapositive, if *x^3 - x^2 + x - 1 = 0*, then *x = 1*.
         - This final statement is very important! Do not miss it!
-* e.g., If the sequence of an integer is odd, then the integer is odd.
+* e.g., If the square of an integer is odd, then the integer is odd.
     - Restatement. If *n^2* is odd, then *n* is odd, where *n ∈ Z*.
     - Contrapositive. If *n* is **NOT** odd, then *n^2* is **NOT** odd, where
       *n ∈ Z*.
@@ -165,7 +165,7 @@ Q' → P'.
 (P ∧ Q' → 0) → (P → Q) is a tautology. So to prove the theorem P → Q, it is
 sufficient to prove P ∧ Q' → 0.
     - Therefore, in a proof by contradiction you assume that both the
-      hypothesis and the negation of the conclusion are true and then ry to
+      hypothesis and the negation of the conclusion are true and then try to
       deduce some contradiction from these assumptions.
 * e.g., If *x^3 - x^2 + x - 1 = 0*, then *x = 1* where *x ∈ R*.
     - We are given '*x^3 - x^2 + x - 1 = 0*' and we know this is true. We'll

@@ -16,6 +16,6 @@ category: discrete-structures
   and *b* are integers with *1 < a < n* and *1 < b < n*.
 * For two numbers *x* and *y*, *x* < *y* means *y - x > 0*.
 * For two integers *n* and *m*, *n* **divides** *m*, *n*|*m*, means that *m* is
-  divisible by *n* - that is, *m = k(n)* for some integer *k*.
+  divisible by *n* - that is, *m = kn* for some integer *k*.
 * The **absolute value** of a number *x*, |*x*|, is *x* if *x ≥ 0* and is *-x*
   if *x < 0*.
